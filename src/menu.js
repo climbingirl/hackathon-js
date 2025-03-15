@@ -2,11 +2,13 @@ import { Menu } from './core/menu';
 import { BackgroundModule } from './modules/background.module';
 import { ClicksModule } from './modules/clicks.module';
 import { ShapeModule } from './modules/shape.module';
+import { TimerModule } from './modules/timer.module.js';
 export class ContextMenu extends Menu {
   menuItems = {
     clicks: new ClicksModule('clicks', 'Считать клики (за 3 секундф)'),
     shape: new ShapeModule('shape', 'Создать фигуру'),
     background: new BackgroundModule('background', 'Поменять цвет'),
+    timer: new TimerModule ('timer', 'Таймер отсчета'),
   };
 
   constructor(element) {
@@ -16,6 +18,7 @@ export class ContextMenu extends Menu {
     this.el.addEventListener('click', (event) => {
       const type = event.target.dataset.type;
       this.menuItems[type].trigger();
+      this.close();
     });
   }
 
