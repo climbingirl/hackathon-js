@@ -1,6 +1,6 @@
 import {Module} from '../core/module'
 
-export class PageTimer extends Module {
+export class TimerModule extends Module {
     constructor (type,text){
         super(type,text)
     }
