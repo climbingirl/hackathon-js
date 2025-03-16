@@ -8,7 +8,7 @@ export class ContextMenu extends Menu {
     clicks: new ClicksModule('clicks', 'Считать клики (за 3 секундф)'),
     shape: new ShapeModule('shape', 'Создать фигуру'),
     background: new BackgroundModule('background', 'Поменять цвет'),
-    timer: new TimerModule ('timer', 'Таймер отсчета'),
+    timer: new TimerModule('timer', 'Таймер отсчета'),
   };
 
   constructor(element) {
