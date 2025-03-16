@@ -55,3 +55,81 @@ body {
   border-radius: 10px;
   background-color: rgb(220, 255, 252);
 }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.ellipse {
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 100px 100px;
+  border-color: transparent transparent black transparent;
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.rhombus {
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+}
+
+.star-5 {
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    100% 35%,
+    68% 65%,
+    89% 100%,
+    50% 75%,
+    11% 100%,
+    32% 65%,
+    0% 35%,
+    39% 35%
+  );
+}
+
+.star-8 {
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(
+    50% 0%,
+    65% 35%,
+    100% 35%,
+    75% 65%,
+    85% 100%,
+    50% 75%,
+    15% 100%,
+    25% 65%,
+    0% 35%,
+    35% 35%
+  )
+}
+
+.pentagon {
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(
+    50% 0%,
+    100% 37.64%,
+    80.9% 100%,
+    19.1% 100%,
+    0% 37.64%
+  );
+}
