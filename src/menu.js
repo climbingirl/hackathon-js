@@ -1,6 +1,7 @@
 import { Menu } from './core/menu';
 import { BackgroundModule } from './modules/background.module';
 import { ClicksModule } from './modules/clicks.module';
+import { MessageModule } from './modules/message.module.js';
 import { ShapeModule } from './modules/shape.module';
 import { TimerModule } from './modules/timer.module.js';
 export class ContextMenu extends Menu {
@@ -9,6 +10,7 @@ export class ContextMenu extends Menu {
     shape: new ShapeModule('shape', 'Создать фигуру'),
     background: new BackgroundModule('background', 'Поменять цвет'),
     timer: new TimerModule ('timer', 'Таймер отсчета'),
+    message: new MessageModule ('message', 'Кастомное сообщение')
   };
 
   constructor(element) {
