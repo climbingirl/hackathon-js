@@ -2,11 +2,13 @@ import { Menu } from './core/menu';
 import { BackgroundModule } from './modules/background.module';
 import { ClicksModule } from './modules/clicks.module';
 import { MessageModule } from './modules/message.module.js';
+import { ShapeModule } from './modules/shape.module.js';
 import { SoundModule } from './modules/sound.module.js';
 import { TimerModule } from './modules/timer.module.js';
 export class ContextMenu extends Menu {
   menuItems = {
-    clicks: new ClicksModule('clicks', 'Считать клики (за 3 секундф)'),
+    clicks: new ClicksModule('clicks', 'Считать клики (за 3 секунды)'),
+    shape: new ShapeModule('shape', 'Создать фигуру'),
     background: new BackgroundModule('background', 'Поменять цвет'),
     timer: new TimerModule('timer', 'Таймер отсчета'),
     message: new MessageModule('message', 'Вызвать сообщение'),
