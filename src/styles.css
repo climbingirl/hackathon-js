@@ -14,6 +14,11 @@ body {
   padding: 2rem;
 }
 
+.header {
+  text-align: center;
+  user-select: none;
+}
+
 .menu {
   position: fixed;
   z-index: 1000;
